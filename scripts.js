@@ -38,8 +38,8 @@ function convertValues() {
 
     const dolarToday = 5.2;
     const euroToday = 6.2;
-    const libraToday = 7.0; // Exemplo de taxa de câmbio para Libra
-    const bitcoinToday = 200000; // Exemplo de taxa de câmbio para Bitcoin
+    const libraToday = 7.0;
+    const bitcoinToday = 200000;
 
     if (!inputCurrencyValue || isNaN(inputCurrencyValue)) {
         alert('Por favor, insira um valor válido.');
