@@ -1,7 +1,34 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    const currencySelect = document.querySelector('.currency-select');
     const convertButton = document.querySelector('.convert-button');
+
+    currencySelect.addEventListener('change', updateCurrencyImage);
     convertButton.addEventListener('click', convertValues);
 });
+
+function updateCurrencyImage() {
+    const currencySelect = document.querySelector('.currency-select');
+    const currencyImage = document.querySelector('.currency-image-change');
+    const currencyText = document.querySelector('.currency-box:nth-child(3) .currency');
+
+    if (currencySelect.value === 'dolar') {
+        currencyImage.src = '/assets/dolar.png';
+        currencyImage.alt = 'logo-moeda-convertida';
+        currencyText.textContent = 'Dólar';
+    } else if (currencySelect.value === 'euro') {
+        currencyImage.src = '/assets/euro.png';
+        currencyImage.alt = 'logo-moeda-convertida';
+        currencyText.textContent = 'Euro';
+    } else if (currencySelect.value === 'libra') {
+        currencyImage.src = '/assets/libra.png';
+        currencyImage.alt = 'logo-moeda-convertida';
+        currencyText.textContent = 'Libra';
+    } else if (currencySelect.value === 'bitcoin') {
+        currencyImage.src = '/assets/bitcoin.png';
+        currencyImage.alt = 'logo-moeda-convertida';
+        currencyText.textContent = 'Bitcoin';
+    }
+}
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector('.input-currency').value.replace(/[^0-9,.-]+/g, '').replace(',', '.');
@@ -46,4 +73,3 @@ function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue);
 }
-
