@@ -51,12 +51,13 @@ function convertValues() {
     const currencyValueToConvert = document.querySelector('.currency-value-to-convert');
     const currencyValueConverted = document.querySelector('.currency-value');
 
+    // Taxas de câmbio fixas (exemplo)
     const exchangeRates = {
-        real: 1,
-        dolar: 5.66,
-        euro: 6.7,
-        libra: 7.15,
-        bitcoin: 355517.37,
+        real: 1,        // 1 Real = 1 Real
+        dolar: 5.66,    // 1 Real = 5.66 Dólares
+        euro: 6.7,      // 1 Real = 6.7 Euros
+        libra: 7.15,    // 1 Real = 7.15 Libras
+        bitcoin: 355517.37, // 1 Real = 355517.37 Bitcoins
     };
 
     if (isNaN(inputCurrencyValue)) {
