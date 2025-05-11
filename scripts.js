@@ -43,6 +43,7 @@ function updateCurrencyImage(selectElement, imageElement, textElement) {
         textElement.textContent = 'Bitcoin';
     }
 }
+// implementação caso a API não funcione.
 
 // function convertValues() {
 //     const inputCurrencyValue = parseFloat(document.querySelector('.input-currency').value.replace(/[^0-9,.-]+/g, '').replace(',', '.'));
@@ -79,6 +80,8 @@ function updateCurrencyImage(selectElement, imageElement, textElement) {
 //         currency: getCurrencyCode(currencySelectFrom.value)
 //     }).format(inputCurrencyValue);
 // }
+
+// implementação da API com a chave de API c9e230dfdce933d1984463b97bc8e5f3
 
 async function convertValues() {
     const inputValueRaw = document.querySelector('.input-currency').value;
