@@ -4,41 +4,42 @@
   <img src="https://img.shields.io/github/license/felipejannuario/Conversor-de-moedas" alt="License">
 </p>
 
-<p align="center">Um simples aplicativo web para converter valores entre diferentes moedas usando taxas de câmbio em tempo real.</p>
+# 💱 Conversor de Moedas
 
-<p align="center">
-  <img src="/assets/logo moeda.png" alt="casa-moeda" width="150px">
-</p>
+Projeto simples e funcional de conversão de moedas feito em JavaScript, com foco em praticar manipulação de DOM, consumo de API e lógica de programação.
 
-## Funcionalidades
-- Conversão de valores entre Real (BRL), Dólar (USD), Euro (EUR), Libra (GBP) e Bitcoin (BTC).
-- Layout responsivo para funcionar em telas de computador e dispositivos móveis.
-- Atualização automática das imagens e nomes das moedas selecionadas.
-- Exibição dos valores convertidos com base nas taxas de câmbio atuais.
+## 📌 Descrição
 
-## Tecnologias Utilizadas
+Este projeto é um conversor de moedas que permite converter valores entre diferentes moedas, como Real (BRL), Dólar (USD) e Euro (EUR), utilizando taxas de câmbio atualizadas via API. O objetivo principal é praticar habilidades fundamentais de desenvolvimento web, incluindo:
+
+- Manipulação de elementos HTML via JavaScript
+- Consumo de APIs com `fetch`
+- Formatação de valores monetários
+- Criação de uma interface simples e responsiva
+
+---
+
+## 📷 Demonstração
+
+![screenshot](link_da_sua_imagem_ou_gif)  
+*Exemplo de conversão de BRL para USD.*
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
 - HTML5
-- CSS3 (com estilos utilizando flexbox para layout responsivo)
+- CSS3
 - JavaScript (ES6+)
-- API de Taxas de Câmbio: [ExchangeRate-API](https://www.exchangerate-api.com/)
+- [API de Câmbio (Exchangerate API ou similar)](https://exchangerate-api.com/) *(substitua pelo link da API que usou)*
 
-## Pré-requisitos
-- Navegador web moderno com suporte a JavaScript ativado.
+---
 
-## Como Usar
-1. Clone este repositório: `git clone https://github.com/felipejannuario/Conversor-de-moedas.git`
-2. Abra o arquivo `index.html` em seu navegador web.
+## 📁 Como Usar
 
-## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
-
-## Autor
-- Felipe Januario
-
-## Licença
-Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
-
-## Link do Site
+1. **Clone o repositório:**
+```bash
+git clone https://github.com/felipejannuario/Conversor-de-moedas.git
 
 Hospedagem Netlify: https://conversor-de-moedasx.netlify.app/
 
